@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti 💘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #fff0f3; /* Color de fondo rosado suave */
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative; /* Necesario para que las fotos floten respecto a la pantalla */
+            overflow-x: hidden; /* Evita barras de desplazamiento horizontales */
+        }
+
+        /* --- NUEVO: Estilos para las fotos flotantes (Igual que en el inicio) --- */
+        .floating-photo {
+            position: absolute;
+            width: 90px; /* Un poco más pequeñas para no tapar la carta */
+            height: auto;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1; /* Detrás de la carta */
+            transition: transform 2s ease-in-out;
+            animation: floatGentle 6s ease-in-out infinite alternate;
+        }
+
+        /* Animación suave de flotación */
+        @keyframes floatGentle {
+            from { transform: translateY(0) rotate(0deg); }
+            to { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Posiciones en las esquinas */
+        .p1 { top: 5%; left: 5%; animation-delay: 0s; }
+        .p2 { top: 10%; right: 5%; animation-delay: 1s; transform: rotate(10deg); }
+        .p3 { bottom: 5%; left: 8%; animation-delay: 2s; transform: rotate(-5deg); }
+        .p4 { bottom: 12%; right: 8%; animation-delay: 3s; transform: rotate(15deg); }
+
+        /* Ocultar las fotos de abajo en celulares pequeños para que no estorben */
+        @media (max-width: 600px) {
+            .p3, .p4 { display: none; }
+        }
+        /* -------------------------------------------------------------------- */
+
+        .paper {
+            background: #fff9f0;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-radius: 5px;
+            border-left: 3px solid #e0d5c5;
+            position: relative;
+            z-index: 10; /* La carta va por delante de las fotos flotantes */
+        }
+        h1 { font-family: 'Dancing Script', cursive; color: #d63384; text-align: center; margin-bottom: 30px; }
+        p { line-height: 1.8; color: #444; font-size: 1.05rem; white-space: pre-line; }
+        
+        /* Foto fija dentro de la carta */
+       /* --- ASÍ DEBE QUEDAR (Más pequeño y centrado) --- */
+.photo-frame {
+    width: 100%;          /* Intenta ocupar el ancho... */
+    max-width: 160px;     /* ...pero le ponemos un límite de 280 pixeles */
+    display: block;       /* Necesario para centrar imágenes */
+    margin: 25px auto;    /* "auto" a los lados la centra */
+    border: 8px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+}
+        
+        .signature { font-family: 'Dancing Script', cursive; font-size: 1.8rem; text-align: right; color: #d63384; margin-top: 30px; }
+        .btn-wa {
+            display: block; width: fit-content; margin: 35px auto 0; background: #25d366;
+            color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px;
+            font-weight: bold; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="/static/images/foto1.jpg" class="floating-photo p1" alt="Recuerdo 1">
+    <img src="/static/images/foto2.jpg" class="floating-photo p2" alt="Recuerdo 2">
+    <img src="/static/images/foto3.jpg" class="floating-photo p3" alt="Recuerdo 3">
+    <img src="/static/images/foto4.jpg" class="floating-photo p4" alt="Recuerdo 4">
+    <div class="paper">
+        <h1>Carta para la esposa perfecta</h1>
+        <p>
+            Si estas leyendo esto es porque lo volveremos a intentar, estoy tan emocionado por esto denuevo cariño tan emocionado de verte y en esta ocasión cumplir todo lo que nos hemos prometido, se que esta vez lo lograremos mi chiquita cumpliremos cada cosa y tendremos nuestro futuro juntos que tanto hemos deseado estoy tan ansioso de verte y abrazarte con todas mis fuerzas.
+            
+            Hemos pasado por tantos problemas, inmadurez la distancia pero todo hemos podido superar y se que superaremos lo que nos falta porque nuestro amor es muy grande y nada va a cambiar eso. Te espero aqui con muchas ansias y con infinitas ganas de tenerte denuevo en mis brazos.
+
+            Bueno mi vida empecemos por explicarte todo lo que siento por ti. De verdad que no se ni como comenzar de todo el amor que te tengo, eres todo lo que necesito y todo mi tipo como fisicamente y emocionalmente. Tenemos el mismo humor y una increible conexión que es inexplicable, nuestro destino es estar juntos.
+
+            No sabes lo mucho que me gustas, ese cabello tan hermoso y esa carita con esos ojitos y esos cachetes tan preciosos, esa sonrisa que me hace ver las nubes es que valeria eres la chica que siempre soñe y en ese tiempo que estuvimos sin hablar nunca pude olvidarte y dejar de pensar en ti.
+            
+            Se que me arriesgo mucho confiando en ti denuevo y intentandolo pero de verdad que vale la pena el riesgo y se que sera diferente porque en este tiempo me lo has demostrado y quiero que tengamos una ultima oportunidad. Cada cosa y cada detalle que haces por mi hace darme cuenta que los dos buscamos lo que tanto nos hemos prometido.
+
+            Desde que nos conocimos siempre sentí esa conexión tan especial me quedaba loco al mirarte, cuando jugabamos UNO con los muchachos o simplemente subiamos a tu pasillo para hablar. No hay palabras para expresar lo que sentía cuando me empezaste a abrazar o el primer beso que me diste es que de verdad me dejaste totalmente enamorado.
+
+            Desde ahí supe que tenias que ser mi novia, no dude ni un segundo en escribirle a humberto y decirle que me gustabas, lo que no sabía es que ya tu sentias lo mismo hace mucho tiempo creo que nunca me emocione tanto en mi vida como en ese momento. Los nervios que tenía cuando subí a pedirtelo son inexplicables aun asi sabiendo que te gustaba estaba muy nervioso y de verdad es uno de los dias mas felices de mi vida.
+
+            Y de verdad que desde ahi cada día fueron increibles fuimos mejorando poco a poco porque al final eramos nuestra primera relación y no sabiamos como manejarlo muy bien pero con el pasar del tiempo nos fuimos soltando mas y mas hasta al punto de decirnos cosas super personales.
+
+            Cada día contigo era increible amor, me da tanta nostalgia pensar en eso. Me la pasaba de maravilla contigo jugando ludo viendo pelis, hablando, corriendo por el pasillo, tirandonos fotos con 1000 filtros, jugando con santi, de verdad que son momentos que siempre estaran marcados en mi vida y hasta ahora son el mejor momento de mi vida. Me daba tanta tristeza cuando estaba en el edificio estar en el 2 y ver hacia arriba y no verte despidiendote.
+
+            Y se que lo que estamos intentando es muy dificil, pero estamos haciendo hasta lo imposible por lograrlo y yo aqui estoy esperandote con mis brazos mas que abiertos deseando que el tiempo pase rapido para verte, de verdad que no me lo voy a creer cuando eso suceda. Con solo el abrazo que te dare te sentiras la niña mas amada del universo.
+
+            Bueno amor sabemos lo que paso y la razón por la que terminamos, yo te perdono cariño y se que no volvera a pasar por eso estoy aqui escribiendote esto (molesto como tu dices) y obviamente es algo que no se olvida pero quiero aprender a vivir con eso y se que puedo porque tu me ayudas bastante. Me demuestras cada dia que esta vez sera diferente y que esta vez la historia será diferente.
+
+            Se que tu también tienes muchas inseguridades pero te prometo amor que no estoy jugando contigo, ni te quiero solo para coger, y quiero que cada vez que sientas esa inseguridad vengas a leer esta carta y esto te demuestre que no te quiero para eso te quiero para que me acompañes el resto de mi vida.
+
+            Y sobre tu cuerpo amor de verdad que no puedes estar mejor, esas tetas que tanto me encanta chuparlas y esas nalgas que me traen loco. No sabes lo mucho que te deseo y lo que causas en mi me pones tan loco cuando veo una foto tuya de verdad que me desespero todito por tenerte denuevo.
+
+            Quiero que seas tu la madre de mi sara, se que seras la madre perfecta para mi hija y que criaremos unos hijos tan perfectos enserio que el futuro que me imagino contigo no puedo imaginarme nada de malo en el, es el futuro que de niño alguna vez soñe y ese niño en el fondo de mi me dice que tu eres esa persona que necesito.
+
+            Se que no he sido el novio perfecto, tengo mis errores a veces me molesto por estupideces o digo cosas que no pienso y las digo por el momento y te pido perdón por ello. Estoy intentando mejorar por ti y lo hago amor asi como tu lo haces de verdad que cuando estamos bien no me cabe ninguna duda que lo lograremos.
+
+            Solo me queda decirte las gracias por ser tú, por demostrarme cada dia el amor tan inmenso que me tienes, por darme todo el cariño del mundo y tenerme tanta paciencia. Por hacerme sentir como un niño pequeño y super amado, por siempre estar ahi cuando lo necesito, por explicarme todo porque sabes la inseguridad que tengo, por hacerme sentir unico, por hacerme sentir inteligente y importante, gracias de corazón por todo mi princesa.
+
+            Se que nos queda un gran camino por recorrer en la que tendremos altos y bajos pero se que lo podremos superar y salir adelante, solo deseo que el tiempo pase rápido y todo se de para vernos porque se que sera el mejor momento de mi vida. Te amo tanto mi chiquita preciosa eres la mujer que siempre soñe y soy muy afortunado de tenerte en mi vida.
+
+            Justo te acabo de decir que te la voy a entregar hoy JAJAJA, la verdad queria esperar mas pero no puedo con la ansiedad de que finalmente seamos novios denuevo oficialmente. Quizás no sea la mejor carta pero es con todo el amor que te tengo y todo lo que siento por tí, eres lo más importante en mi vida y mi mundo sin ti no tiene sentido.
+
+        
+        </p>
+        
+        <img src="/static/images/foto_carta.jpg" class="photo-frame" alt="Nosotros">
+
+        <p>
+            Gracias por todo amor. Espero que te guste esta carta asi como a mi me gustó hacerla.
+        </p>
+
+        <div class="signature">Con amor, tu pinwino 💘</div>
+        
+        <a href="https://wa.me/584123872882?text=💘" class="btn-wa">
+            Responder por WhatsApp 💌
+        </a>
+    </div>
+</body>
+</html>
